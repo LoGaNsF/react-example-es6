@@ -1,1 +1,2 @@
-# react-example-es6
+# ReactJS Example
+A usage example of ReactJS + ES2015 + Babel + Webpack
