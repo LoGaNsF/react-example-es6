@@ -1,0 +1,42 @@
+{
+  "name": "react-example-es6",
+  "version": "1.0.0",
+  "description": "A usage example of ReactJS",
+  "main": "app.jsx",
+  "scripts": {
+    "start": "npm run build & npm run server",
+    "server": "webpack-dev-server --hot",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LoGaNsF/react-example-es6.git"
+  },
+  "keywords": [
+    "javascript",
+    "react",
+    "EcmaScript 6",
+    "webpack",
+    "babel"
+  ],
+  "author": "@LoGaNsF",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LoGaNsF/react-example-es6/issues"
+  },
+  "homepage": "https://github.com/LoGaNsF/react-example-es6#readme",
+  "dependencies": {
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.6",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
