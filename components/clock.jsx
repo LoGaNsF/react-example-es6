@@ -6,12 +6,12 @@ class Clock extends React.Component {
 		date: new Date().toLocaleString()
 	};
 
-	handleClock = () => {
+	handleClock() {
 		this.setState({date: new Date().toLocaleString()});
-	};
+	}
 
 	componentDidMount() {
-		this.interval = setInterval(this.handleClock, 1000);
+		this.interval = setInterval(this.handleClock.bind(this), 1000);
 	}
 
 	componentWillUnmount() {
@@ -19,9 +19,7 @@ class Clock extends React.Component {
 	}
 
 	render() {
-		return (
-			<div className="clock">{this.state.date}</div>
-		);
+		return <div className="clock">{this.state.date}</div>;
 	}
 	
 }

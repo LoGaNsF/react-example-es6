@@ -14,14 +14,12 @@ class Counter extends React.Component {
 		counter: this.props.start
 	};
 
-	handleClick = () => {
+	handleClick() {
 		this.setState({counter: ++this.state.counter});
-	};
+	}
 
 	render() {
-		return (
-			<div onClick={this.handleClick}>Counter: {this.state.counter}</div>
-		);
+		return <div onClick={this.handleClick.bind(this)}>Counter: {this.state.counter}</div>;
 	}
 
 }
