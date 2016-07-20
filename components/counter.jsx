@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Counter extends React.Component {
+export default class Counter extends React.Component {
 
 	static propTypes = {
 		start: React.PropTypes.number
@@ -14,14 +14,18 @@ class Counter extends React.Component {
 		counter: this.props.start
 	};
 
+	constructor(props) {
+		super(props);
+
+		this.handleClick = this.handleClick.bind(this);
+	}
+
 	handleClick() {
 		this.setState({counter: ++this.state.counter});
 	}
 
 	render() {
-		return <div onClick={this.handleClick.bind(this)}>Counter: {this.state.counter}</div>;
+		return <div onClick={this.handleClick}>Counter: {this.state.counter}</div>;
 	}
 
 }
-
-export default Counter;
